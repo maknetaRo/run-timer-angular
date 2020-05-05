@@ -1,0 +1,74 @@
+.jumbotron {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 8px;
+  border: 4px solid #42b33c;
+  box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 420px;
+}
+
+#time {
+  font-size: 12vh;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  max-width: 300px;
+  margin: auto;
+}
+.btn {
+  width: 4rem;
+  display: inline-flex;
+  height: 4rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.start-btn {
+  margin-right: 1.5rem;
+  background: #42b33c;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+}
+.stop-btn {
+  margin-left: 1.5rem;
+  background: #b33c42;
+}
+.stop-btn:hover {
+  transform: scale(1.1);
+}
+.start-btn::before,
+.stop-btn::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 50%;
+  background: white;
+}
+.start-btn::before {
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  right: 18%;
+  height: 60%;
+}
