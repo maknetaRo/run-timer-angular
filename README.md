@@ -1,5 +1,7 @@
 # Timer
 
+I'm trying to create a Run Time App while learning Angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
 ## Development server
