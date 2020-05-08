@@ -1,0 +1,39 @@
+<div class="row-title row">
+  <h1 class="title">Run Timer App</h1>
+</div>
+
+<div class="container">
+  <!-- <div class="row">
+      <div class="main-box">
+        <div id="time">{{ time | date: "HH:mm:ss" }}</div>
+      </div>
+    </div> -->
+  <div class="row">
+    <div class="main-box">
+      <div id="time">
+        <!-- {{ displayHours }}:{{ displayMinutes }}:{{ displaySeconds }} -->
+        {{ timer }}
+      </div>
+    </div>
+  </div>
+  <div class="buttons row">
+    <button
+      class="start-btn btn"
+      (click)="displayTime()"
+      [ngClass]="status ? 'visible' : 'hidden'"
+    ></button>
+
+    <button
+      class="stop-btn btn"
+      (click)="stopTimer()"
+      [ngClass]="status ? 'hidden' : 'visible'"
+    ></button>
+  </div>
+  <div class="input-box">
+    <h4>Time:</h4>
+    {{ duration }}
+  </div>
+  <div class="finish-box">
+    <button class="finish-button" (click)="resetTimer()">Finish</button>
+  </div>
+</div>
